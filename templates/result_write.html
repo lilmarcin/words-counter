@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Words counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+        .w3-bar,h1,button {font-family: "Oswald"}
+        .fa-anchor,.fa-coffee {font-size:200px}
+        .container {
+            padding: 50px;
+        }
+        .result-text {
+            font-family: 'Oswald';
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .result-value {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .text-center {
+            text-align: center;
+            font-family: 'Pacifico';
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            background-color: rgba(0, 0, 0, 0.1);
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 5px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-primary {
+            background-color: #007BFF;
+            border: 1px solid #007BFF;
+            color: #fff;
+            font-family: 'Oswald';
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #fff;
+            border: 1px solid #007BFF;
+            color: #007BFF;
+        }
+        .btn-primary:focus {
+            outline: none;
+        }
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}");
+            background-size: 90% 55%;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6">
+                <h1 class="text-center">Result</h1>
+                <p class="result-text">Words: {{ word_counter }}</p>
+                <p class="result-text">Characters: {{ character_counter }}</p>
+                <div class="text-center">
+                    <a href="/" class="btn btn-primary">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
