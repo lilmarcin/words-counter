@@ -31,7 +31,7 @@
         }
         .text-center {
             text-align: center;
-            font-family: 'Pacifico';
+            font-family: 'Oswald';
         }
         .form-group {
             margin-bottom: 20px;
@@ -62,8 +62,7 @@
             outline: none;
         }
         body {
-            background-image: url("{{ url_for('static', filename='background.jpg') }}");
-            background-size: 90% 55%;
+            background-color: #fff2e6;
             background-position: bottom center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -75,10 +74,13 @@
         <div class="row justify-content-center mt-5">
             <div class="col-lg-6">
                 <h1 class="text-center">Result</h1>
-                <p class="result-text">Words (słowa): {{ word_counter }}</p>
-                <p class="result-text">Characters (znaki): {{ character_counter }}</p>
+                <p class="result-text">Words: {{ word_counter }}</p>
+                <p class="result-text">Characters: {{ character_counter }}</p>
                 <div class="text-center">
-                    <a href="/" class="btn btn-primary">Back (Powrót)</a>
+                    <img src="data:image/jpeg;base64,{{ encoded_img }}" style="max-width: 100%;" />
+                </div>
+                <div class="text-center">
+                    <a href="/" class="btn btn-primary">Back</a>
                 </div>
             </div>
         </div>

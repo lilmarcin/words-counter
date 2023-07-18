@@ -6,8 +6,7 @@ This project is a web application that counts words and characters in text.
 
 The application counts words and characters:
 - in text entered in a text field
-- on a picture in.jpg format
-- on the image sent from the camera (to do)
+- on a picture from file or url
 
 ## Technologies Used
 
@@ -33,6 +32,10 @@ The application counts words and characters:
     ```bash
     pip install -r requirements.txt
 
+    Install separately if necessary:
+    -`pip install torch torchvision torchaudio`
+    -`pip install easyocr`
+
 ## Usage
 
 1. Run the Flask application:
@@ -43,11 +46,14 @@ The application counts words and characters:
 2. Open a web browser and go to http://localhost:5000.
 3. On the home page, select the option you are interested in (write text or upload image with text).
 ![GIF](images/home_page.gif)
-3. In the `write text` option, type the text in the box and click`count`.
+3. In the `write text` option, type the text in the box and click `count`. See example results:
 ![Screenshot](images/write1.png)
 ![Screenshot](images/result_write1.png)
-4. In the `upload image` option, type the image url and click `upload`.
+4. In the `upload image` option, type the image url or upload from file and click `upload`. See example results:
 ![Screenshot](images/upload.png)
+![Screenshot](images/result_image_url.png)
+![Screenshot](images/result_image_file.png)
+![Screenshot](images/result_image_file1.png)
 
 
 

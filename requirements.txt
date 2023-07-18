@@ -4,3 +4,9 @@ Flask-WTF>=1.1.1
 wtforms>=3.0.1
 requests
 matplotlib
+Pillow==9.5.0
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+easyocr==1.7.0
