@@ -41,12 +41,12 @@ The application counts words and characters:
     python app.py
 
 2. Open a web browser and go to http://localhost:5000.
-3. On the home page, select the option you are interested in (write text or upload image with text)
-![Screenshot](images/home.png)
-3. In the `write text` option, type the image url click `count`
+3. On the home page, select the option you are interested in (write text or upload image with text).
+![GIF](images/home_page.gif)
+3. In the `write text` option, type the image url and click `count`.
 ![Screenshot](images/write1.png)
 ![Screenshot](images/result_write1.png)
-4. In the `upload image` option, type the text in the box and click `upload`
+4. In the `upload image` option, type the text in the box and click `upload`.
 ![Screenshot](images/upload.png)
 
 
