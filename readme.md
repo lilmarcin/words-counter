@@ -50,7 +50,7 @@ The application counts words and characters:
 ![Screenshot](images/write1.png)
 ![Screenshot](images/result_write1.png)
 4. In the `upload image` option, type the image url or upload from file and click `upload`. See example results:
-![Screenshot](images/upload.png)
+
 ![Screenshot](images/result_image_url.png)
 ![Screenshot](images/result_image_file.png)
 ![Screenshot](images/result_image_file1.png)
