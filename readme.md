@@ -1,18 +1,19 @@
-# Dominant Color Detection
+# Words counter
 
-This project is a web application that detects and displays the 5 dominant colors present in an image. Users can provide the URL of an image, and the application will analyze the image to determine its dominant colors.
+This project is a web application that counts words and characters in text.
 
 ## Features
 
-- Detects the dominant colors in an image based on a provided URL.
-- Displays the original image along with the dominant color squares and their corresponding percentages.
-- Allows users to easily upload and analyze images.
+The application counts words and characters:
+- in text entered in a text field
+- on a picture in.jpg format
+- on the image sent from the camera (to do)
 
 ## Technologies Used
 
 - Python
-- Flask (Web framework)
-- scikit-learn (Machine learning library)
+- Flask
+- OpenCV
 - HTML/CSS
 
 ## Installation
@@ -20,12 +21,12 @@ This project is a web application that detects and displays the 5 dominant color
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/dominant-color-detection.git
+    git clone https://github.com/lilmarcin/words-counter.git
 
 2. Navigate to the project directory:
 
     ```bash
-    cd dominant-color-detection
+    cd words-counter
 
 3. Install the required dependencies:
 
@@ -40,17 +41,17 @@ This project is a web application that detects and displays the 5 dominant color
     python app.py
 
 2. Open a web browser and go to http://localhost:5000.
-3. Enter the URL of an image in the provided input field.
-4. Click the "Upload" button to analyze the image and display the dominant colors.
+3. On the home page, select the option you are interested in (write text or upload image with text)
+![Screenshot](images/home.png)
+3. In the `write text` option, type the image url click `count`
+![Screenshot](images/write1.png)
+![Screenshot](images/result_write1.png)
+4. In the `upload image` option, type the text in the box and click `upload`
+![Screenshot](images/upload.png)
+
 
 ## Screenshots
 
-![Screenshot](examples/example_1.png)
-
-![Screenshot](examples/example_2.png)
-## Acknowledgments
-
-This project is inspired by the concept of color quantization and dominant color extraction. It utilizes the scikit-learn library for K-means clustering to identify the dominant colors in an image.
 
 ## License
 This project is licensed under the MIT License.
